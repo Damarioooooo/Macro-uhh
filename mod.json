@@ -4,22 +4,16 @@
   "gd": {
     "ios": "2.2081"
   },
-  "version": "0.2.0",
+  "version": "0.3.0",
   "id": "jrtv.segment-macro-ios",
   "name": "Segment Macro",
   "developer": "JRTV",
-  "description": "Practice-mode segment recorder with captured start/end states, automatic takeover, and an in-level floating control.",
+  "description": "Practice-mode segment recorder with pause-menu recording and playback controls.",
   "settings": {
     "auto-playback": {
       "type": "bool",
       "name": "Arm automatic playback",
-      "description": "Wait for the recorded start state and replay the saved segment. Disable to disarm.",
-      "default": false
-    },
-    "hide-floating-button": {
-      "type": "bool",
-      "name": "Hide floating macro button",
-      "description": "Hide the in-level macro control button.",
+      "description": "Wait for the recorded start state and replay the saved segment.",
       "default": false
     }
   }
