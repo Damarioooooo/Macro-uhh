@@ -1,16 +1,14 @@
+14
 {
   "geode": "5.11.2",
   "gd": { "ios": "2.2081" },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "id": "jrtv.segment-macro-ios",
-  "name": "Segment Macro (iOS prototype)",
-  "developer": "Community prototype",
-  "description": "Experimental segment macro recorder with automatic percentage trigger. Not yet validated for exact state matching or device playback.",
+  "name": "Segment Macro",
+  "developer": "JRTV",
+  "description": "Practice-mode segment recorder with captured start/end states, automatic takeover, and an in-level floating control.",
   "settings": {
-    "record-segment": { "type": "bool", "name": "Record segment on next run", "description": "Records button transitions between the configured start and end percentages.", "default": false },
-    "auto-takeover": { "type": "bool", "name": "Automatic takeover", "description": "Attempt playback at the start percentage after the start-state guard passes.", "default": false },
-    "start-percent": { "type": "int", "name": "Start percent", "description": "Segment start percentage (0–100).", "default": 50, "min": 0, "max": 100 },
-    "end-percent": { "type": "int", "name": "End percent", "description": "Segment end percentage (1–100).", "default": 75, "min": 1, "max": 100 },
-    "state-tolerance": { "type": "int", "name": "Position tolerance", "description": "Approximate position tolerance for the takeover guard, in game units.", "default": 4, "min": 1, "max": 40 }
+    "auto-playback": { "type": "bool", "name": "Arm automatic playback", "description": "Wait for the recorded start state and replay the saved segment. Disable to disarm.", "default": false },
+    "hide-floating-button": { "type": "bool", "name": "Hide floating macro button", "description": "Hide the in-level macro control button.", "default": false }
   }
 }
